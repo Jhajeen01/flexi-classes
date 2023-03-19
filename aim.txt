@@ -1,0 +1,6 @@
+front page.
+feat: --timeslots
+      --searching
+        Search functionality for classes
+        Class availability calendar
+        Booking system for classes

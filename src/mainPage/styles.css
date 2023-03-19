@@ -1,0 +1,85 @@
+.page {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .header {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .classes {
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+  
+  .search-bar button {
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .subjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .subject {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .subject h4 {
+    margin: 0;
+  }
+  
+  .book-slot {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .book-slot button {
+    background-color: #232323;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .timeslots {
+    margin-top: 5px;
+  }
+  
+  .teacher {
+    margin-top: 5px;
+  }
+  
