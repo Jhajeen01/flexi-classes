@@ -3,9 +3,15 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing Node.js and npm"
-      - curl -sL https://rpm.nodesource.com/setup_16.x | bash - # Use Node.js version 16
-      - yum install -y nodejs
+      - echo "Installing NVM (Node Version Manager)"
+      - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+      - export NVM_DIR="$HOME/.nvm"
+      - [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+      - [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      - echo "Installing Node.js"
+      - nvm install 16 # Specify your desired Node.js version
+      - nvm use 16
+      - node -v # Verify Node.js installation
       - echo "Installing dependencies"
       - npm install
   build:
