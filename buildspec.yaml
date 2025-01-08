@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Installing Node.js and npm"
+      - curl -sL https://rpm.nodesource.com/setup_16.x | bash - # Use Node.js version 16
+      - yum install -y nodejs
+      - echo "Installing dependencies"
+      - npm install
+  build:
+    commands:
+      - echo "Building the React app"
+      - npm run build
+  post_build:
+    commands:
+      - echo "Build completed. Preparing artifacts for deployment."
+
+artifacts:
+  files:
+    - 'build/**/*'
+  base-directory: build
